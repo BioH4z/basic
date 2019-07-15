@@ -21,7 +21,11 @@ RUN apt-get update -y \
 	pigz \
 	curl \
 	wget \
+	locales \
 	python3-dev python3-tk python-imaging-tk \
-	python3-pip
+	python3-pip \
+	&& locale-gen en_US.UTF-8
+
+ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
 
 #END
