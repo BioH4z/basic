@@ -16,7 +16,7 @@ RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selectio
 
 # install libraries
 RUN apt-get update -y \
-	&& apt-get install -y build-essential cmake pkg-config nano \
+	&& apt-get install -y build-essential cmake pkg-config nano apt-utils\
 	git \
 	pigz unzip\
 	curl \
