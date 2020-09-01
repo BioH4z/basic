@@ -1,2 +1,2 @@
 # Docker file for basic Ubuntu
-Basic Docker Ubuntu container with python 3 for biohaz/basic_ubuntu:V1
+Docker container with latest UBUNTU version with python 3, curl, pigz, git, wget and unzip.
